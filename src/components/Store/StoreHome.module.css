@@ -1,0 +1,94 @@
+.store-home-container {
+  width: 100%;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .store-home-container {
+    padding: 12px !important;
+  }
+
+  .store-home-container .statsRow {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    margin: 12px 0 !important;
+  }
+
+  .store-home-container .statCard {
+    padding: 16px !important;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px !important;
+  }
+
+  .store-home-container .statIcon {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+
+  .store-home-container .statContent h3 {
+    font-size: 22px !important;
+  }
+
+  .store-home-container .statContent p {
+    font-size: 14px !important;
+  }
+
+  .store-home-container .dashboardGrid {
+    margin: 12px 0 !important;
+    gap: 12px !important;
+  }
+
+  .store-home-container .orderStatusCard {
+    padding: 16px !important;
+  }
+
+  .store-home-container .orderStatusCard h4 {
+    font-size: 18px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .store-home-container table {
+    font-size: 12px !important;
+  }
+
+  .store-home-container table th,
+  .store-home-container table td {
+    padding: 8px 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .store-home-container {
+    padding: 8px !important;
+  }
+
+  .store-home-container .statsRow {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .store-home-container .statCard {
+    padding: 12px !important;
+  }
+
+  .store-home-container .statContent h3 {
+    font-size: 20px !important;
+  }
+
+  .store-home-container .dashboardGrid {
+    margin: 8px 0 !important;
+    gap: 10px !important;
+  }
+
+  .store-home-container .orderStatusCard {
+    padding: 12px !important;
+  }
+
+  .store-home-container .orderStatusCard h4 {
+    font-size: 16px !important;
+  }
+}
+
+

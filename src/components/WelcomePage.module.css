@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.coll {
+  min-width: 150px !important;
+  max-width: 200px !important;
+  padding: 0 !important;
+}
+.img {
+  min-width: 350px;
+  max-width: 200px;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+.wel {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.26px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.wel span {
+  color: var(--secondary-color);
+}
+.getcol {
+  min-width: 230px !important;
+  max-width: 230px !important;
+  padding: 0 !important;
+}
+.get {
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 230px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 3px 3px 6px gray;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+.get:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.get:active {
+  background-color: var(--primary-active);
+  color: white;
+}
+.welcomebox{
+  width: 450px;
+  height: 350px;
+}
+.welcomecontainer{
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
