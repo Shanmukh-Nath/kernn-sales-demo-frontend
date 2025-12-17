@@ -3,7 +3,7 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
-import imageBase64 from "../images/feeds-croped.png";
+import imageBase64 from "../images/logo-bg.png";
 import QRCode from "qrcode";
 
 export const handleExportMultiplePDF = async (tables, mainTitle = "Report") => {

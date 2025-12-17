@@ -1,5 +1,5 @@
 import styles from "./Login.module.css";
-import bglogo from "../images/feeds-croped.png";
+import bglogo from "../images/logo-bg.png";
 function Header() {
   return (
     <>

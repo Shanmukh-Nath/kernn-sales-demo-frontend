@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./StoreSelector.module.css";
 import { useAuth } from "../Auth";
-import feedsLogo from "../images/feeds-croped.png";
+import feedsLogo from "../images/logo-bg.png";
 
 const StoreSelector = () => {
   const [stores, setStores] = useState([]);
@@ -228,7 +228,7 @@ const StoreSelector = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.logoContainer}>
-          <img src={feedsLogo} alt="Feeds Logo" className={styles.logo} />
+          <img src={feedsLogo} alt="KERN Logo" className={styles.logo} />
         </div>
 
         <h1 className={styles.companyName}>KERNN AUTOMATIONS PVT LTD</h1>

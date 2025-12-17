@@ -3,7 +3,7 @@ import { normalizeRoleName } from "../utils/roleUtils";
 import { useNavigate } from "react-router-dom";
 import styles from "./Divs.module.css";
 import tokenManager from "../utils/tokenManager";
-import feedsLogo from "../images/feeds-croped.png";
+import feedsLogo from "../images/logo-bg.png";
 import { useDivision } from "../components/context/DivisionContext";
 
 const Divs = () => {
@@ -388,7 +388,7 @@ const Divs = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.logoContainer}>
-          <img src={feedsLogo} alt="Feeds Logo" className={styles.logo} />
+          <img src={feedsLogo} alt="KERN Logo" className={styles.logo} />
         </div>
 
         <h1 className={styles.companyName}>KERNN AUTOMATIONS PVT LTD</h1>

@@ -3,7 +3,7 @@ import autoTable from "jspdf-autotable";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 import QRCode from "qrcode";
-import imageBase64 from "../images/feeds-croped.png";
+import imageBase64 from "../images/logo-bg.png";
 
 /**
  * ✅ EXPORT TO PDF

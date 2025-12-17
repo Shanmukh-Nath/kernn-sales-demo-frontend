@@ -35,8 +35,9 @@
 
 .brand {
   height: 30px;
+  min-width: 280px;
   width: fit-content;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px gray;
   /* font-family: Montserrat; */
@@ -48,6 +49,7 @@
   color: white;
   margin: 15px;
   float: left;
+  white-space: nowrap;
 }
 .headcontent {
   min-width: 370px !important;
@@ -352,21 +354,23 @@
   }
 
   .mobileHeaderCenter .logo {
-    width: 36px !important;
-    height: 36px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
     flex-shrink: 0;
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
   }
 
   .mobileHeaderCenter .logo img {
-    width: 100% !important;
-    height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
     object-fit: contain;
     display: block;
   }
@@ -507,8 +511,10 @@
   }
 
   .mobileHeaderCenter .logo {
-    width: 32px !important;
-    height: 32px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;

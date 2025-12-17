@@ -1,8 +1,8 @@
 .logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
+  width: auto;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
   /* background: url("https://s3-alpha-sig.figma.com/img/53b3/27c4/762dfb31d7775832ebdd1dc6e1cd6cd1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LJYdlLTXb0TOkCCgag8TODchiVSQEy0~njrZr6jybJsX-rVdIVMVsdPxpEjVVM6Qf5AdJHEGyysfqUf~yLL4YWcev1r8QVu4XWcolmlLLYxHCc~uDh5BIoAOLLDuCrlIsowhtz7Zg9zJMy3EIV7MftyX~YbUfgSkRI4Y7BlALttDdyrRcJYXEzqGb01hmw8Xvo-2kI2x3q-CsT82PghsRT8bRXqNRqGADVvXVx1X50KSte8GUbyT4-42RGOs-ejgPT9mwu280cQBPnTEJ-WX6AEruiI-MIRHV23~BZYYmDuqhiWmMZf4X4sy5DxaBoVsGuBtcmX12SCIHzdHvzlPJg__") */
   /* no-repeat center center/cover; */
   margin: 5px 5px 20px 5px;
@@ -10,10 +10,11 @@
 }
 
 .logo img {
-  /* width: 70px;
-  height: auto; */
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
 }
 
 .navicons {

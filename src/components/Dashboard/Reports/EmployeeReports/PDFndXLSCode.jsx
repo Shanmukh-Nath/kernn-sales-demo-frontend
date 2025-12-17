@@ -3,7 +3,7 @@ import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import * as XLSX from "xlsx";
 import QRCode from "qrcode";
-import imageBase64 from "@/images/feeds-croped.png";
+import imageBase64 from "@/images/logo-bg.png";
 
 // ---------- EXCEL EXPORT ----------
 export const exportToExcel = (selectedNames, reportData) => {

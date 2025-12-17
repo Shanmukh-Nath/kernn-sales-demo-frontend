@@ -1,6 +1,6 @@
 import { useAuth } from "../Auth";
 import styles from "./WelcomePage.module.css";
-import smlogo from "../images/feeds-croped.png";
+import smlogo from "../images/logo-bg.png";
 import FootLink from "./Dashboard/FootLink";
 
 function WelcomePage({ data }) {

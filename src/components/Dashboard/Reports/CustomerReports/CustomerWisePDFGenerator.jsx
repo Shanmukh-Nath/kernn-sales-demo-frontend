@@ -1,7 +1,7 @@
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import QRCode from "qrcode";
-import imageBase64 from "@/images/feeds-croped.png";
+import imageBase64 from "@/images/logo-bg.png";
 
 export const handleCustomerWisePDF = async (
   columns,
