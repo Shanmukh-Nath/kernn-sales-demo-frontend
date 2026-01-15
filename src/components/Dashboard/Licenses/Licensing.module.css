@@ -1,0 +1,11 @@
+.superBtn {
+  background: linear-gradient(135deg, #7b1fa2, #512da8);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.superBtn:hover {
+  opacity: 0.9;
+}

@@ -42,6 +42,7 @@ const TargetRoutes = lazy(() => import("./Targets/TargetRoutes"));
 const ReturnRoutes = lazy(() => import("./Returns/ReturnRoutes"));
 const TeamsRoutes = lazy(() => import("./Teams/TeamsRoutes"));
 const DivisionManager = lazy(() => import("./DivisionManager"));
+const LicenseRoutes = lazy(() => import("./Licenses/LicensingRoutes"));
 
 export default function Dashboard({
   admin,
@@ -397,6 +398,14 @@ export default function Dashboard({
                   element={
                     <Suspense fallback={<RouteSkeleton />}>
                       <DivisionManager />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/licensing/*"
+                  element={
+                    <Suspense fallback={<RouteSkeleton />}>
+                      <LicenseRoutes />
                     </Suspense>
                   }
                 />

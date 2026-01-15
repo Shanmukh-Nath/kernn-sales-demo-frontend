@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./NavContainer.module.css";
+import { useDivision } from "@/components/context/DivisionContext";
 
 function NavBg({ hover, setTab, tab }) {
   const location = useLocation();
@@ -8,6 +9,8 @@ function NavBg({ hover, setTab, tab }) {
   const user = JSON.parse(localStorage.getItem("user")) || { roles: [] };
 
   const roles = JSON.stringify(user.roles || []);
+
+  const { showAllDivisions } = useDivision();
 
   // console.log(roles);
   return (
@@ -745,6 +748,38 @@ function NavBg({ hover, setTab, tab }) {
               </svg>
 
               {hover && <p>Divisions </p>}
+            </Link>
+          </div>
+        )}
+
+        {roles.includes("Admin") && showAllDivisions && (
+          <div
+            className={`${
+              location.pathname.includes("licensing") ? styles.active : ""
+            }`}
+            onClick={() => setTab("licensing")}
+          >
+            <Link to="/licensing">
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                  stroke="black"
+                  strokeWidth="2"
+                />
+                <path d="M7 9h10M7 13h6" stroke="black" strokeWidth="2" />
+              </svg>
+
+              {hover && <p>Licenses</p>}
             </Link>
           </div>
         )}
